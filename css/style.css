@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Open Sans', arial;
+    font-size:36px;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+.container{
+    width:400px;
+    margin:0 auto;
+    text-align: center;
+}
+button{
+    width:60px;
+    height: 30px;
+
+}
