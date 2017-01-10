@@ -8,7 +8,8 @@ var duration = moment.duration(time * 1000, 'milliseconds');
 var interval = 1000;
 var intervalSet;
 var minCounter = 0;
-
+var number = Math.max(parseInt(element.textContent));
+var number2;
 
 function countDown(){
   duration = moment.duration(duration.asMilliseconds() - interval, 'milliseconds');
@@ -40,10 +41,13 @@ this.stop = function(){
 this.add = function(){
     duration.add(1, "minutes");
     minCounter++;
+
+    element.textContent = (parseInt(minCounter + number) <= 9 ? "0" + parseInt(minCounter + number) : parseInt(minCounter + number)) + ":00";
 }
 this.minus = function(){
     duration.subtract(1, "minutes");
     minCounter--;
+    element.textContent = (parseInt(minCounter + number) <= 9 ? "0" + parseInt(minCounter + number) : parseInt(minCounter + number)) + ":00";
 }
 this.reset = function(){
     duration = moment.duration(time * 1000, 'milliseconds');

@@ -1,27 +1,3 @@
-
-$(function(){
-
-    var valueElement = $('#time');
-  
-    function incrementValue(e){
-      var number = Math.max(parseInt(valueElement.text()) + e.data.increment,0);
-      
-        timeDisplay.textContent = (number <= 9 ? "0" + number : number) + ":00";
-      
-        return false;
-    }
-
-    $('#plus').on('click', {increment: 1}, incrementValue);
-
-    $('#minus').on('click', {increment: -1}, incrementValue);
-
-});
-
-
-
-
-
-
 var timeDisplay = document.getElementById('time');
 var startButton = document.getElementById('start-button');
 var plus = document.getElementById('plus');
