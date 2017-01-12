@@ -9,7 +9,7 @@ var interval = 1000;
 var intervalSet;
 var minCounter = 0;
 var number = Math.max(parseInt(element.textContent));
-var number2;
+
 
 function countDown(){
   duration = moment.duration(duration.asMilliseconds() - interval, 'milliseconds');
