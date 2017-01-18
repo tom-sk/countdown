@@ -15,7 +15,9 @@ var minCounter = 0;
 var number = Math.max(parseInt(element.textContent));
 
 
+
 var isBreak = false;
+
 
 
 function countDown(){
@@ -82,6 +84,7 @@ this.reset = function(){
     
 }
 
+
 // this.breakStart = function(){
 //     if(!this.isOn){
 //         intervalSet = setInterval(countDown, interval);
@@ -100,3 +103,6 @@ this.breakMinus = function(){
 
 
 }
+
+}
+
