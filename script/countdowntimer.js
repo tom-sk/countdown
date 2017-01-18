@@ -62,27 +62,27 @@ this.stop = function(){
           intervalSet = null;
           this.isOn = false;
       }
-}
+};
 this.add = function(){
     duration.add(1, "minutes");
     duration2.add(1, "minutes");
     minCounter++;
     
     element.textContent = (parseInt(minCounter + number) <= 9 ? "0" + parseInt(minCounter + number) : parseInt(minCounter + number)) + ":00";
-}
+};
 this.minus = function(){
     duration.subtract(1, "minutes");
     duration2.subtract(1, "minutes");
     minCounter--;
     element.textContent = (parseInt(minCounter + number) <= 9 ? "0" + parseInt(minCounter + number) : parseInt(minCounter + number)) + ":00";
-}
+};
 this.reset = function(){
     duration = moment.duration(time * 1000, 'milliseconds');
     duration.add(minCounter, "minutes");
     element.textContent = moment(duration.asMilliseconds()).format('mm:ss');
     this.isOn = false;
     
-}
+};
 
 
 // this.breakStart = function(){
@@ -93,16 +93,16 @@ this.reset = function(){
 
 this.breakAdd = function(){
     breakDuration.add(1, "minutes");
-}
+};
 this.breakMinus = function(){
     breakDuration.subtract(1, "minutes");
 
-}
+};
 
 
 
 
 }
 
-}
+
 
